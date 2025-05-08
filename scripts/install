@@ -48,7 +48,7 @@ ynh_config_add_nginx
 ynh_script_progression "Set $app admin and database"
 
 pushd $install_dir
-	php$php_version cli.php install module=index host=127.0.0.1 user=$db_user password=$db_pwd database=$db_name admin[email]=$email admin[password]=$password
+	php$php_version cli.php install engine=pgsql host=127.0.0.1 user=$db_user password=$db_pwd database=$db_name admin[email]=$email admin[password]=$password
 popd
 
 #=================================================
