@@ -1,1 +1,1 @@
-This is a dummy description of this app features
+Powerful and easy to use CMS with page builder to build websites, blogs or ecommerce stores.
