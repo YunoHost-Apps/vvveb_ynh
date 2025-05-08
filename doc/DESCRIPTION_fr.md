@@ -1,1 +1,1 @@
-Ceci est une fausse description des fonctionalités de l'app
+CMS puissant et facile à utiliser avec un constructeur de pages pour créer des sites Web, des blogs ou des boutiques de commerce électronique.
