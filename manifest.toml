@@ -56,10 +56,11 @@ ram.runtime = "50M"
 
     [resources.sources.main]
     in_subdir = false
-    url = "https://github.com/givanz/Vvveb/archive/refs/tags/1.0.7.2.tar.gz"
-    sha256 = "f5b6aefd123b44d30ce6c45b9a8fd28b8737c0d7d75a1464d4e0ffa4a53e51fe"
+    url = "https://github.com/givanz/Vvveb/releases/download/1.0.7.2/latest.zip"
+    sha256 = "07ba56e55a97e10553cbec02f7b334cb451f88ad123b5ac02b640c4d6807f655"
 
     autoupdate.strategy = "latest_github_release"
+    autoupdate.asset="latest\\.zip"
 
     [resources.system_user]
 
