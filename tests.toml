@@ -3,4 +3,7 @@
 test_format = 1.0
 
 [default]
+    [default.curl_tests]
+        # TODO: is theme missing in default install?
+        home.auto_test_assets = false
 

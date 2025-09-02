@@ -1,0 +1,25 @@
+From 3b1725974578e20d4cdb2f0e24b7ff8c4789128c Mon Sep 17 00:00:00 2001
+From: orhtej2 <2871798+orhtej2@users.noreply.github.com>
+Date: Tue, 2 Sep 2025 23:13:52 +0200
+Subject: [PATCH] Fixup schema
+
+---
+ install/sql/pgsql/schema/fields/field.sql | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/install/sql/pgsql/schema/fields/field.sql b/install/sql/pgsql/schema/fields/field.sql
+index e1d7854..8aa39b2 100755
+--- a/install/sql/pgsql/schema/fields/field.sql
++++ b/install/sql/pgsql/schema/fields/field.sql
+@@ -14,7 +14,7 @@ CREATE TABLE field (
+   "validation" text NOT NULL,
+   "presentation" text NOT NULL,
+   "conditionals" text NOT NULL,
+-  "row" int NOT NULL DEFAULT 0
++  "row" int NOT NULL DEFAULT 0,
+   "status" smallint NOT NULL,
+   "sort_order" int NOT NULL DEFAULT 0,
+   PRIMARY KEY ("field_id")
+-- 
+2.47.2
+
