@@ -1,0 +1,1 @@
+Ton acces the admin panel: __DOMAIN__/admin
