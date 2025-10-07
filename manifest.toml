@@ -7,7 +7,7 @@ name = "Vvveb"
 description.en = "CMS to build websites, blogs or ecommerce stores"
 description.fr = "CMS pour créer des sites Web, des blogs ou des boutiques de commerce électronique"
 
-version = "1.0.7.2~ynh1"
+version = "1.0.7.3~ynh1"
 
 maintainers = ["eric_G"]
 
@@ -56,8 +56,8 @@ ram.runtime = "50M"
 
     [resources.sources.main]
         in_subdir = false
-        url = "https://github.com/givanz/Vvveb/releases/download/1.0.7.2/latest.zip"
-        sha256 = "07ba56e55a97e10553cbec02f7b334cb451f88ad123b5ac02b640c4d6807f655"
+        url = "https://github.com/givanz/Vvveb/releases/download/1.0.7.3/latest.zip"
+        sha256 = "eae36a17b10d0b48122a54e35faae49c10139227dee3fea2e27264151898ebec"
 
         autoupdate.strategy = "latest_github_release"
         autoupdate.asset="latest\\.zip"
