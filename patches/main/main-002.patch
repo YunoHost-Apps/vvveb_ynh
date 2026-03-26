@@ -1,0 +1,42 @@
+From 2c29cabb597ad5892d622f4bdbee2ce4032c9d73 Mon Sep 17 00:00:00 2001
+From: orhtej2 <2871798+orhtej2@users.noreply.github.com>
+Date: Mon, 17 Nov 2025 11:11:02 +0100
+Subject: [PATCH] Fix admin provisioning
+
+---
+ admin/sql/pgsql/admin.sql | 8 ++++----
+ 1 file changed, 4 insertions(+), 4 deletions(-)
+
+diff --git a/admin/sql/pgsql/admin.sql b/admin/sql/pgsql/admin.sql
+index a01b3e6..e148649 100755
+--- a/admin/sql/pgsql/admin.sql
++++ b/admin/sql/pgsql/admin.sql
+@@ -165,21 +165,21 @@
+ 			
+ 			SET @LIST(:admin) 
+ 			
+-		WHERE 
++		WHERE 1=0
+ 
+ 		@IF isset(:email)
+ 		THEN 
+-			email = :email 
++			OR email = :email 
+ 		END @IF			
+ 
+ 		@IF isset(:admin_id)
+ 		THEN 
+-			admin_id = :admin_id 
++			OR admin_id = :admin_id 
+ 		END @IF					
+ 
+ 		@IF isset(:username)
+ 		THEN 
+-			username = :username 
++			OR username = :username 
+ 	       	END @IF
+ 	END
+ 
+-- 
+2.43.0
+
